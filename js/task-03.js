@@ -17,6 +17,15 @@ const galleryRef = document.querySelector(".gallery");
 
 const listOfImages = images.map(
   ({ url, alt }) =>
-    `<li class='gallery__list'><img src='${url}' alt='${alt}' width='500'></li>`
+    `<li><img src='${url}' alt='${alt}' width='500' style="display: block"></li>`
 );
+
+//Не знав як правильно по завданню зробити, тому можна було так або так як у фінішному варіанті у файлі CSS
+
+// galleryRef.style.listStyle = "none";
+// galleryRef.style.display = "flex";
+// galleryRef.style.flexDirection = "column";
+// galleryRef.style.alignItems = "center";
+// galleryRef.style.gap = "20px";
+
 galleryRef.insertAdjacentHTML("beforeend", listOfImages.join(""));
