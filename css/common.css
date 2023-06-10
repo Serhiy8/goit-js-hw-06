@@ -35,4 +35,8 @@ button {
 .gallery__list {
   list-style: none;
 }
+
+.gallery__list img {
+  display: block;
+}
 /* ------------------------------------------------------------------------------------------- */
