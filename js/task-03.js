@@ -20,10 +20,4 @@ const listOfImages = images.map(
     `<li class='gallery__list'><img src='${url}' alt='${alt}' width='500'></li>`
 );
 
-galleryRef.style.display = "flex";
-galleryRef.style.flexDirection = "column";
-galleryRef.style.alignItems = "center";
-galleryRef.style.gap = "20px";
-galleryRef.style.listStyle = "none";
-
 galleryRef.insertAdjacentHTML("beforeend", listOfImages);
