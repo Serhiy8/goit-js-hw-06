@@ -10,12 +10,12 @@ const onIncrementButtonClick = document.querySelector(
 
 const decrement = () => {
   counterValue -= 1;
-  return (counterValueRef.textContent = counterValue);
+  counterValueRef.textContent = counterValue;
 };
 
 const increment = () => {
   counterValue += 1;
-  return (counterValueRef.textContent = counterValue);
+  counterValueRef.textContent = counterValue;
 };
 
 onDecrementButtonClick.addEventListener("click", decrement);
