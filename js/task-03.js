@@ -19,5 +19,4 @@ const listOfImages = images.map(
   ({ url, alt }) =>
     `<li class='gallery__list'><img src='${url}' alt='${alt}' width='500'></li>`
 );
-
-galleryRef.insertAdjacentHTML("beforeend", listOfImages);
+galleryRef.insertAdjacentHTML("beforeend", listOfImages.join(""));
