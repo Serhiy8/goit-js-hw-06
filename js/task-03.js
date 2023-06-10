@@ -15,10 +15,12 @@ const images = [
 
 const galleryRef = document.querySelector(".gallery");
 
-const listOfImages = images.map(
-  ({ url, alt }) =>
-    `<li><img src='${url}' alt='${alt}' width='500' style="display: block"></li>`
-);
+const listOfImages = images
+  .map(
+    ({ url, alt }) =>
+      `<li><img src='${url}' alt='${alt}' width='500' style="display: block"></li>`
+  )
+  .join("");
 
 //Не знав як правильно по завданню зробити, тому можна було так або так як у фінішному варіанті у файлі CSS
 
@@ -28,4 +30,4 @@ const listOfImages = images.map(
 // galleryRef.style.alignItems = "center";
 // galleryRef.style.gap = "20px";
 
-galleryRef.insertAdjacentHTML("beforeend", listOfImages.join(""));
+galleryRef.insertAdjacentHTML("beforeend", listOfImages);
